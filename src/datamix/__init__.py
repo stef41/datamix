@@ -63,6 +63,18 @@ from datamix.streaming import (
     stream_interleave,
     stream_jsonl,
 )
+from datamix.diversity import (
+    DiversityAnalyzer,
+    DiversityMetrics,
+    format_diversity_report,
+)
+from datamix.calculator import (
+    BudgetCalculator,
+    CalcTokenBudget,
+    DatasetCost,
+    estimate_tokens,
+    format_budget_report,
+)
 
 __all__ = [
     "CurriculumPhase",
@@ -106,4 +118,14 @@ __all__ = [
     "StreamingDataset",
     "stream_interleave",
     "stream_jsonl",
+    # Diversity
+    "DiversityAnalyzer",
+    "DiversityMetrics",
+    "format_diversity_report",
+    # Calculator
+    "BudgetCalculator",
+    "CalcTokenBudget",
+    "DatasetCost",
+    "estimate_tokens",
+    "format_budget_report",
 ]
