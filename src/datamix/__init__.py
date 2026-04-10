@@ -51,6 +51,11 @@ from datamix.quality import (
     dedup_ngram,
     quality_score,
 )
+from datamix.streaming import (
+    StreamingDataset,
+    stream_interleave,
+    stream_jsonl,
+)
 
 __all__ = [
     "CurriculumPhase",
@@ -86,4 +91,8 @@ __all__ = [
     "step_schedule",
     "stratified_sample",
     "temperature_sample",
+    # Streaming
+    "StreamingDataset",
+    "stream_interleave",
+    "stream_jsonl",
 ]
