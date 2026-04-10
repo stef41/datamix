@@ -23,6 +23,12 @@ from datamix.mixer import (
     merge_recipes,
     scale_recipe,
 )
+from datamix.config import (
+    load_recipe_json,
+    load_recipe_yaml,
+    save_recipe_json,
+    save_recipe_yaml,
+)
 from datamix.curriculum import (
     linear_schedule,
     cosine_schedule,
@@ -67,12 +73,16 @@ __all__ = [
     "fit_to_budget",
     "length_filter",
     "linear_schedule",
+    "load_recipe_json",
+    "load_recipe_yaml",
     "merge_recipes",
     "profile_dataset",
     "profile_jsonl",
     "proportional_sample",
     "quality_score",
     "scale_recipe",
+    "save_recipe_json",
+    "save_recipe_yaml",
     "step_schedule",
     "stratified_sample",
     "temperature_sample",

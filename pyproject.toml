@@ -38,8 +38,9 @@ classifiers = [
 dependencies = []
 
 [project.optional-dependencies]
+yaml = ["pyyaml>=6.0"]
 cli = ["click>=8.0", "rich>=13.0"]
-all = ["datamix[cli]"]
+all = ["datamix[cli,yaml]"]
 
 [project.urls]
 Homepage = "https://github.com/stef41/datamix"
