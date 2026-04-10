@@ -1,0 +1,61 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "datamix"
+version = "0.1.0"
+description = "Dataset mixing & curriculum optimizer — profile, blend, schedule, and budget training data. Zero deps."
+readme = "README.md"
+license = {text = "Apache-2.0"}
+requires-python = ">=3.9"
+authors = [{ name = "Zacharie Bhatti" }]
+keywords = [
+    "dataset",
+    "mixing",
+    "curriculum",
+    "training",
+    "data",
+    "sampling",
+    "optimization",
+    "llm",
+    "machine-learning",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Typing :: Typed",
+]
+dependencies = []
+
+[project.optional-dependencies]
+cli = ["click>=8.0", "rich>=13.0"]
+all = ["datamix[cli]"]
+
+[project.urls]
+Homepage = "https://github.com/stef41/datamix"
+Repository = "https://github.com/stef41/datamix"
+Issues = "https://github.com/stef41/datamix/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/datamix"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --tb=short"
+
+[tool.ruff]
+target-version = "py39"
+line-length = 99
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
