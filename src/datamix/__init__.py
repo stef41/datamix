@@ -51,6 +51,12 @@ from datamix.quality import (
     dedup_ngram,
     quality_score,
 )
+from datamix.optimizer import (
+    OptimizationResult,
+    format_optimization,
+    grid_search_ratios,
+    optimize_ratios,
+)
 from datamix.streaming import (
     StreamingDataset,
     stream_interleave,
@@ -81,6 +87,10 @@ __all__ = [
     "load_recipe_json",
     "load_recipe_yaml",
     "merge_recipes",
+    "OptimizationResult",
+    "optimize_ratios",
+    "grid_search_ratios",
+    "format_optimization",
     "profile_dataset",
     "profile_jsonl",
     "proportional_sample",
