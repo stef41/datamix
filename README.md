@@ -1,5 +1,7 @@
 # datamix
 
+[![PyPI](https://img.shields.io/pypi/v/datamix?color=blue)](https://pypi.org/project/datamix/)
+[![Downloads](https://img.shields.io/pypi/dm/datamix)](https://pypi.org/project/datamix/)
 [![CI](https://github.com/stef41/datamix/actions/workflows/ci.yml/badge.svg)](https://github.com/stef41/datamix/actions/workflows/ci.yml)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/downloads/)
 [![License: Apache 2.0](https://img.shields.io/badge/license-Apache%202.0-green.svg)](LICENSE)
